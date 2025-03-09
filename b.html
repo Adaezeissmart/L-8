@@ -6,17 +6,30 @@
     <title>Document</title>
 </head>
 <body>
-    <p>Enter any number (greater than a 100 but less that 300) then press OK</p>
-    <input id="id1" type="number" min="100" max="300" required>
+    <h1>Are you eligible to vote?</h1>
+    <p>Enter you age then press OK</p>
+    <input id="id1" type="number" min="16" max="300000000000" required>
     <button onclick="myFunction()">OK</button>
     <p id="result"></p>
+
+
+
+
+
+
+
+
+
+
+
+    
     <script>
         function myFunction(){
             var io = document.getElementById("id1");
             if (!io.checkValidity()){
                 document.getElementById("result").innerHTML = io.validationMessage;
             } else{
-                document.getElementById("result").innerHTML = "Input OK";
+                document.getElementById("result").innerHTML = "You are eligible to vote";
             }
         }
     </script>
